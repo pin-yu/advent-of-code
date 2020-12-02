@@ -10,7 +10,7 @@ fn main() {
     let input_vec = read_input_data(file_name);
     let result = solve(&input_vec.unwrap());
 
-    println!("{}", result);
+    println!("{}", result.unwrap());
 }
 
 fn read_input_data(file_name: &str) -> Result<Vec<i32>, Error> {
@@ -26,7 +26,7 @@ fn read_input_data(file_name: &str) -> Result<Vec<i32>, Error> {
     Ok(vec)
 }
 
-fn solve(input_vec: &Vec<i32>) -> Option(i32 {
+fn solve(input_vec: &[i32]) -> Option<i32> {
     let mut map: HashMap<i32, usize> = HashMap::new();
 
     // this problem is simliar to leet code two sum
@@ -36,9 +36,9 @@ fn solve(input_vec: &Vec<i32>) -> Option(i32 {
         if !map.contains_key(&residual) {
             map.insert(*num, idx);
         } else {
-            return input_vec[idx] * input_vec[*map.get(&residual).unwrap()];
+            return Some(input_vec[idx] * input_vec[*map.get(&residual).unwrap()]);
         }
     }
 
-    -1
+    None
 }
