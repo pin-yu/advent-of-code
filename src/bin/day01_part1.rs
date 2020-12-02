@@ -42,3 +42,14 @@ fn solve(input_vec: &[i32]) -> Option<i32> {
 
     None
 }
+
+#[cfg(test)]
+mod tests {
+    use super::*;
+
+    #[test]
+    fn test_solve() {
+        let numbers = vec![1721, 979, 366, 299, 675, 1456];
+        assert_eq!(solve(&numbers).unwrap(), 514579);
+    }
+}
