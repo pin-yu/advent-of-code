@@ -9,18 +9,8 @@ I joined the challenge on Dec 1st 2020 because of the invitation from my best co
 ## How to Run?
 I'll put my solution in the directory `src/bin`.
 
-To Run:
-```sh
-cargo run --bin [BINARY NAME] [INPUT TXT PATH]
-```
-
 Check the name of the binaries for all the puzzles below and the corresponding input txt path:
-| Day | Name | Part | Binary Name | Input txt Path |
+| Day | Name | Part | To Run | To Test |
 |:-:|:-:|:-:|:-:|:-:|
-| 1 | Report Repair | 1 | day01_part1 | input_data/day01_input.txt
-| 1 | Report Repair | 2 | day01_part2 |
-
-To Test:
-```sh
-cargo test
-```
+| 1 | Report Repair | 1 | `cargo run --bin day01_part1 input_data/day01_input.txt` | `cargo test --bin day01_part1` |
+| 1 | Report Repair | 2 |
