@@ -4,7 +4,7 @@ This repo is consisted of my solutions to the challenge [`Advent of Code`](https
 The solutions are written in `Rust`, which is currently one of my preferred programming languages.
 
 ## Challenge
-I joined the challenge on Dec 1st 2020 because of the invitation from my best colleague Yu-Shan Lin. This challenge lasts 25 days until Christmas. I will try my best to submit the solution every day.
+I joined the challenge on Dec 1st 2020 because of the invitation from my best colleague [Yu-Shan Lin](https://github.com/SLMT). This challenge lasts 25 days until Christmas. I will try my best to submit the solution every day.
 
 ## How to Run?
 I'll put my solution in the directory `src/bin`.
