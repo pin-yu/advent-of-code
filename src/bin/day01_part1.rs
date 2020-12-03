@@ -1,7 +1,6 @@
 use std::collections::HashMap;
 use std::env;
-use std::fs::File;
-use std::io::{BufRead, BufReader, Error};
+use utils::read_input_data;
 
 fn main() {
     let args: Vec<String> = env::args().collect();
@@ -11,19 +10,6 @@ fn main() {
     let result = solve(&input_vec.unwrap());
 
     println!("{}", result.unwrap());
-}
-
-fn read_input_data(file_name: &str) -> Result<Vec<i32>, Error> {
-    let input = File::open(file_name)?;
-    let buffered = BufReader::new(input);
-
-    let mut vec = Vec::new();
-
-    for line in buffered.lines() {
-        vec.push(line?.trim().parse::<i32>().unwrap());
-    }
-
-    Ok(vec)
 }
 
 fn solve(input_vec: &[i32]) -> Option<i32> {
