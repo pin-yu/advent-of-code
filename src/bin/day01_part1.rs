@@ -1,5 +1,6 @@
 use std::collections::HashMap;
 use std::env;
+
 use utils::read_input_data;
 
 fn main() {
