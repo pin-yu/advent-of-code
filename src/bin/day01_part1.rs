@@ -1,13 +1,13 @@
 use std::collections::HashMap;
 use std::env;
 
-use utils::read_input_data;
+use utils::read_day01_input_data;
 
 fn main() {
     let args: Vec<String> = env::args().collect();
     let file_name = &args[1];
 
-    let input_vec = read_input_data(file_name);
+    let input_vec = read_day01_input_data(file_name);
     let result = solve(&input_vec.unwrap());
 
     println!("{}", result.unwrap());
