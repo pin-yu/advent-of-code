@@ -20,7 +20,7 @@ pub fn read_lines_to_vec(file_name: &str) -> Result<Vec<String>, Error> {
     let mut vec = Vec::new();
 
     for line in buffered.lines() {
-        vec.push(line?.trim().to_string());
+        vec.push(line?.trim().to_owned());
     }
 
     Ok(vec)
@@ -62,7 +62,7 @@ mod tests {
     fn test_solve() {
         let lines: Vec<String> = vec!["1-3 a: abcde", "1-3 b: cdefg", "2-9 c: ccccccccc"]
             .into_iter()
-            .map(|s| s.to_string())
+            .map(|s| s.to_owned())
             .collect();
 
         assert_eq!(solve(&lines).unwrap(), 1);
