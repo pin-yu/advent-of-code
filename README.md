@@ -10,9 +10,8 @@ I joined the challenge on Dec 1st 2020 because of the invitation from my best co
 I'll put my solution in the directory `src/bin`.
 
 Check the name of the binaries for all the puzzles below and the corresponding input txt path:
-| Day | Name | Part | To Run | To Test |
+| Day | Name | To Run | To Test |
 |:-:|:-:|:-:|:-:|:-:|
-| 1 | Report Repair | 1 | `cargo run --bin day01_part1 input_data/day01_input.txt` | `cargo test --bin day01_part1` |
-| 1 | Report Repair | 2 | `cargo run --bin day01_part2 input_data/day01_input.txt` | `cargo test --bin day01_part2` |
-| 2 | Password Philosophy | 1 | `cargo run --bin day02_part1 input_data/day02_input.txt` | `cargo test --bin day02_part1` |
-| 2 | Password Philosophy | 2 | `cargo run --bin day02_part2 input_data/day02_input.txt` | `cargo test --bin day02_part2` |
+| 1 | Report Repair | `cargo run --bin day01 input_data/day01_input.txt` | `cargo test --bin day01` |
+| 2 | Password Philosophy | `cargo run --bin day02 input_data/day02_input.txt` | `cargo test --bin day02` |
+| 3 | Toboggan Trajectory | `cargo run --bin day03 input_data/day03_input.txt` | `cargo test --bin day03` |
