@@ -11,7 +11,7 @@ I'll put my solution in the directory `src/bin`.
 
 Check the name of the binaries for all the puzzles below and the corresponding input txt path:
 | Day | Name | To Run | To Test |
-|:-:|:-:|:-:|:-:|:-:|
+|:-:|:-:|:-:|:-:|
 | 1 | Report Repair | `cargo run --bin day01 input_data/day01_input.txt` | `cargo test --bin day01` |
 | 2 | Password Philosophy | `cargo run --bin day02 input_data/day02_input.txt` | `cargo test --bin day02` |
 | 3 | Toboggan Trajectory | `cargo run --bin day03 input_data/day03_input.txt` | `cargo test --bin day03` |
