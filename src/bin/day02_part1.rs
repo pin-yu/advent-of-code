@@ -53,11 +53,10 @@ mod tests {
 
     #[test]
     fn test_solve() {
-        let lines = vec![
-            "1-3 a: abcde".to_string(),
-            "1-3 b: cdefg".to_string(),
-            "2-9 c: ccccccccc".to_string(),
-        ];
+        let lines: Vec<String> = vec!["1-3 a: abcde", "1-3 b: cdefg", "2-9 c: ccccccccc"]
+            .into_iter()
+            .map(|s| s.to_string())
+            .collect();
 
         assert_eq!(solve(&lines).unwrap(), 2);
     }
