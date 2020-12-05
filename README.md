@@ -15,3 +15,4 @@ Check the name of the binaries for all the puzzles below and the corresponding i
 | 1 | Report Repair | 1 | `cargo run --bin day01_part1 input_data/day01_input.txt` | `cargo test --bin day01_part1` |
 | 1 | Report Repair | 2 | `cargo run --bin day01_part2 input_data/day01_input.txt` | `cargo test --bin day01_part2` |
 | 2 | Password Philosophy | 1 | `cargo run --bin day02_part1 input_data/day02_input.txt` | `cargo test --bin day02_part1` |
+| 2 | Password Philosophy | 2 | `cargo run --bin day02_part2 input_data/day02_input.txt` | `cargo test --bin day02_part2` |
