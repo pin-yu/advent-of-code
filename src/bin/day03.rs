@@ -28,12 +28,12 @@ fn solve_part1(input_vec: &[String]) -> Option<i32> {
     solve(input_vec, 3, 1)
 }
 
-fn solve_part2(input_vec: &[String]) -> Option<i32> {
-    let mut result = 1;
+fn solve_part2(input_vec: &[String]) -> Option<i64> {
+    let mut result: i64 = 1;
     for h in (1..=7).step_by(2) {
-        result *= solve(input_vec, h, 1).unwrap();
+        result *= solve(input_vec, h, 1).unwrap() as i64;
     }
-    result *= solve(input_vec, 1, 2).unwrap();
+    result *= solve(input_vec, 1, 2).unwrap() as i64;
     Some(result)
 }
 
