@@ -63,7 +63,7 @@ mod tests {
     use super::*;
 
     #[test]
-    fn test_solve_part1() {
+    fn test_solve() {
         let vec: Vec<String> = vec![
             "..##.......",
             "#...#...#..",
@@ -82,27 +82,6 @@ mod tests {
         .collect();
 
         assert_eq!(solve_part1(&vec).unwrap(), 7);
-    }
-
-    #[test]
-    fn test_solve_part2() {
-        let vec: Vec<String> = vec![
-            "..##.......",
-            "#...#...#..",
-            ".#....#..#.",
-            "..#.#...#.#",
-            ".#...##..#.",
-            "..#.##.....",
-            ".#.#.#....#",
-            ".#........#",
-            "#.##...#...",
-            "#...##....#",
-            ".#..#...#.#",
-        ]
-        .into_iter()
-        .map(|s| s.to_owned())
-        .collect();
-
         assert_eq!(solve_part2(&vec).unwrap(), 336);
     }
 }

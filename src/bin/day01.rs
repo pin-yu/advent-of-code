@@ -66,14 +66,9 @@ mod tests {
     use super::*;
 
     #[test]
-    fn test_solve_part1() {
+    fn test_solve() {
         let numbers = vec![1721, 979, 366, 299, 675, 1456];
         assert_eq!(solve_part1(&numbers).unwrap(), 514579);
-    }
-
-    #[test]
-    fn test_solve_part2() {
-        let numbers = vec![1721, 979, 366, 299, 675, 1456];
         assert_eq!(solve_part2(&numbers).unwrap(), 241861950);
     }
 }

@@ -80,22 +80,13 @@ mod tests {
     use super::*;
 
     #[test]
-    fn test_solve_part1() {
+    fn test_solve() {
         let lines: Vec<String> = vec!["1-3 a: abcde", "1-3 b: cdefg", "2-9 c: ccccccccc"]
             .into_iter()
             .map(|s| s.to_owned())
             .collect();
 
         assert_eq!(solve_part1(&lines).unwrap(), 2);
-    }
-
-    #[test]
-    fn test_solve_part2() {
-        let lines: Vec<String> = vec!["1-3 a: abcde", "1-3 b: cdefg", "2-9 c: ccccccccc"]
-            .into_iter()
-            .map(|s| s.to_owned())
-            .collect();
-
         assert_eq!(solve_part2(&lines).unwrap(), 1);
     }
 }
