@@ -78,7 +78,7 @@ fn divider(
             panic!("invalid input!")
         }
     }
-    // eventually, lrb will equal urb
+    // eventually, upper bound will be the same as lower bound
     lower_bound
 }
 
@@ -87,7 +87,7 @@ fn find_vacancy_seat(mut seats: Vec<i32>) -> Option<i32> {
 
     let mut current_seat_id = seats[0];
 
-    // find the lack seat id
+    // find the vacancy seat id
     for &v in seats.iter() {
         if v != current_seat_id {
             return Some(current_seat_id);
