@@ -16,3 +16,4 @@ Check the name of the binaries for all the puzzles below and the corresponding i
 | 2 | Password Philosophy | `cargo run --bin day02 input_data/day02_input.txt` | `cargo test --bin day02` |
 | 3 | Toboggan Trajectory | `cargo run --bin day03 input_data/day03_input.txt` | `cargo test --bin day03` |
 | 4 | Passport Processing | `cargo run --bin day04 input_data/day04_input.txt` | `cargo test --bin day04` |
+| 5 | Binary Boarding | `cargo run --bin day05 input_data/day05_input.txt` | `cargo test --bin day05` |
